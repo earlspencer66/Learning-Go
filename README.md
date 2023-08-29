@@ -42,3 +42,27 @@ I'm learning Golang - one step at a time
     \end{equation}
       Output will always lie between 0 and 1
   ```
+  * *Loss function*
+
+> The loss function (cost function) is to be minimized so as to get the best values for each parameter of the model.
+* Weight - slope
+* bias - y-intercept
+* target is (y) and predictor is x
+
+> You need to evaluate your model, and for that you need to define the cost function (loss function).
+> The minimization of the loss function can be the driving force for finding the optimum value of each parameter.
+> For regression/numeric prediction, **L1 and L2** can be the useful loss function.
+> For classification, **cross entropy** can be the useful loss function.
+> **Softmax** or **sigmoid cross entropy** can be quite popular loss function
+
+## Optimizers
+1.  Assume initial values of weight and bias for the model
+2.  Find a way to reach the best value of the parameters
+
+
+* The optimizer is the way to reach the best value of the parameters
+  > TensorFlow, and every other deep learning framework, provides optimizers that slowly change each parameter in order **to minimize the loss function.**
+
+  > Adaptive techniques (adadelta, adagrad, etc.) are good optimizers for converging faster for complex neural networks.
+
+  > The adaptive learning rates methods are the best options for sparse data sets.
