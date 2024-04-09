@@ -7,7 +7,7 @@ import (
 )
 
 func formHandler(w http.ResponseWriter, r *http.Request) {
-	if err := http.ParseForm(); err != nil {
+	if err := r.ParseForm(); err != nil {
 		fmt.Fprintf(w, "ParseForm failed %v", err)
 		return
 	}
