@@ -11,7 +11,7 @@ func formHandler(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "ParseForm failed %v", err)
 		return
 	}
-	fmt.Fprintf(w, "ParseForm success")
+	fmt.Fprintf(w, "ParseForm success\n")
 	name := r.FormValue("name")
 	Email := r.FormValue("email")
 	fmt.Fprintf(w, "name: %s\n", name)
@@ -27,7 +27,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "format not supported", http.StatusNotFound)
 		return
 	}
-	fmt.Fprintf(w, "Hello, %s!")
+	fmt.Fprintf(w, "Hello!")
 }
 
 func main() {
