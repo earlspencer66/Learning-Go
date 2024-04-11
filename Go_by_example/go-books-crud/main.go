@@ -17,6 +17,8 @@ type Author struct {
 	Year      int    `json:"year"`
 }
 
+var books []Book // slice of type books
+
 func main() {
 	r := mux.NewRouter()
 
