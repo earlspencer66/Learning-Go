@@ -92,10 +92,10 @@ func main() {
 	//with their corresponding methods
 
 	r.HandleFunc("/books", getBooks).Methods("GET")
-	r.HandleFunc("/books/id", getBook).Methods("GET")
+	r.HandleFunc("/books/{id}", getBook).Methods("GET")
 	r.HandleFunc("/books", createBook).Methods("POST")
-	r.HandleFunc("/books/id", deleteBook).Methods("DELETE")
-	r.HandleFunc("/books/id", updateBook).Methods("PUT")
+	r.HandleFunc("/books/{id}", deleteBook).Methods("DELETE")
+	r.HandleFunc("/books/{id}", updateBook).Methods("PUT")
 
 	fmt.Printf("Starting server at port 8000\n")
 	log.Fatal(http.ListenAndServe(":8000", r))
