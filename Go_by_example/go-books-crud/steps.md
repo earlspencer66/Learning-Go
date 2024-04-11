@@ -3,5 +3,5 @@
 ```cmd
 >go mod init github.com
 >go mod tidy
->go install github.com/gorilla/mux@latest
+>go get "github.com/gorilla/mux"
 ```
