@@ -22,5 +22,5 @@ var books []Book // slice of type books
 func main() {
 	r := mux.NewRouter()
 
-	books = append(books)
+	books = append(books, Book{ID: "1", Isbn: "1563254", Title: "The Desire of Ages", Author: &Author{Firstname: "Ellen", Lastname: "White", Year: 1905}})
 }
