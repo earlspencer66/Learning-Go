@@ -11,6 +11,12 @@ type Book struct {
 	Author *Author `json:author"`
 }
 
+type Author struct {
+	Firstname string `json:"firstname"`
+	Lastname  string `json:"lastname"`
+	Year      int    `json:"year"`
+}
+
 func main() {
 	r := mux.NewRouter()
 
