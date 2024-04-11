@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
 	"net/http"
@@ -22,6 +23,11 @@ type Author struct {
 }
 
 var books []Book // slice of type books
+
+func getBooks(w http.ResponseWriter, r http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(books)
+}
 
 func main() {
 	r := mux.NewRouter()
