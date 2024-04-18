@@ -13,3 +13,8 @@ go get "github.com/jinzhu/gorm/dialects/mysql"
 ```cmd
 go get "github.com/gorilla/mux"
 ```
+
+#### Steps
+1. Start with creating routes in bookstoreroutes.go file --- link with Postman -- contains the routes
+2. Go to app.go
+3. 
