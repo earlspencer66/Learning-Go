@@ -16,5 +16,11 @@ go get "github.com/gorilla/mux"
 
 #### Steps
 1. Start with creating routes in bookstoreroutes.go file --- link with Postman -- contains the routes
-2. Go to app.go
-3. 
+2. Go to app.go --- to interact with the DB MySQL
+```go
+//check documentation for...
+import (
+    _ "github.com/jihnzu/gorm/dialects/mysql
+)
+```
+3. Utils.go file..
