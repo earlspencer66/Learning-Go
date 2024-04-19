@@ -45,3 +45,12 @@ func GetBookById(Id int64) (*Book, *gorm.DB) {
 	db := db.Where("ID=?", Id).Find(&getBook)
 	return &getBook, db
 }
+
+func DeleteBook(ID, int64) Book { //notice difference between ID and Id here 
+	var book Book
+	db.Where("ID=?", ID).Delete(book)
+	return book
+}
+
+//Update will not be included
+//Combination of three functions to implement update

@@ -17,3 +17,5 @@ func main() {
 	http.Handle("/", r)
 	log.fatal(http.ListenAndServe("localhost:9010", r))
 }
+
+//create functions for connectiong to database
