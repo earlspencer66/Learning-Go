@@ -27,4 +27,9 @@ func init() {
 // User interacts with the routes. Routes with the controllers
 // Controllers perform operations with the database
 
-//different functions for the controllers
+// different functions for the controllers
+func (b *Book) CreateBook() *Book {
+	db.NewRecord(b)
+	db.Create(&b)
+	return b
+}
