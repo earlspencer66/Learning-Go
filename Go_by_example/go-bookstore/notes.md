@@ -23,4 +23,4 @@ import (
     _ "github.com/jihnzu/gorm/dialects/mysql
 )
 ```
-3. Utils.go file..
+3. Utils.go file..used for unmarshiling

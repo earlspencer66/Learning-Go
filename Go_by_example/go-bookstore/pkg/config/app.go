@@ -2,7 +2,7 @@ package config
 
 import (
 	"github.com/jihnzu/gorm"
-	_ "github.com/jihnzu/gorm/dialects/mysql"  
+	_ "github.com/jihnzu/gorm/dialects/mysql"   //see in documentation
 )
 
 var {
