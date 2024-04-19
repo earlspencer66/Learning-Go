@@ -24,3 +24,7 @@ import (
 )
 ```
 3. Utils.go file..used for unmarshiling
+4. Work on models i.e. the book.go file
+5. Add main.go file
+6. All functions included in the book.go
+7. Update the controllers i.e. book-controller.go
