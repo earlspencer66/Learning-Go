@@ -46,7 +46,7 @@ func GetBookById(Id int64) (*Book, *gorm.DB) {
 	return &getBook, db
 }
 
-func DeleteBook(ID, int64) Book { //notice difference between ID and Id here 
+func DeleteBook(ID, int64) Book { //notice difference between ID and Id here
 	var book Book
 	db.Where("ID=?", ID).Delete(book)
 	return book
