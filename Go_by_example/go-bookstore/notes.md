@@ -28,3 +28,5 @@ import (
 5. Add main.go file
 6. All functions included in the book.go
 7. Update the controllers i.e. book-controller.go
+8. Check for bugs and test using postman
+
