@@ -20,8 +20,8 @@ go get "github.com/gorilla/mux"
 ```go
 //check documentation for...
 import (
-    _ "github.com/jihnzu/gorm/dialects/mysql
-)
+    _ "github.com/jihnzu/gorm/dialects/mysql"
+ )
 ```
 3. Utils.go file..used for unmarshiling
 4. Work on models i.e. the book.go file
