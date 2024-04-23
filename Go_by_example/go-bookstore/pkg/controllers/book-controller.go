@@ -9,6 +9,7 @@ import (
 	"github.com/gorilla/mux"
 
 	"github.com/pkg/models"
+	"github.com/pkg/utils"
 
 	//import utils
 
@@ -63,6 +64,34 @@ func DeleteBook(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("error while parsing book") //same steps as getbook by ID
 	}
 	book := models.DeleteBook(D)
+	res, _ := json.Marshal(book)
+	w.Header().Set("Content-Type", "pkglication/json")
+	w.WriteHeader(http.StatusOK)
+	w.Write(res)
+}
+
+// update book controller function
+func UpdateBook(w http.ResponseWriter, r *http.Request) {
+	var updateBook = &models.Book{}
+	utils.ParseBody(r, updateBook)
+	vars := mux.Vars(r)
+	bookId := vars["bookId"]
+	ID, err := strconv.ParseInt(bookId, 0, 0)
+	if err != nil {
+		fmt.Println("error while parsing book") //
+
+	}
+	bookDetails, db := models.GetBookById(ID)
+	if updateBook.Name != "" {
+		bookDetails.Name = updateBook.Name
+	}
+	if updateBook.Author != "" {
+		bookDetails.Author = updateBook.Author
+	}
+	if updateBook.Publication != "" {
+		bookDetails.Publication = updateBook.Publication
+	}
+	db.Save(&bookDetails)
 	res, _ := json.Marshal(book)
 	w.Header().Set("Content-Type", "pkglication/json")
 	w.WriteHeader(http.StatusOK)
