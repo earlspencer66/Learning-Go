@@ -42,3 +42,13 @@ func GetBookById(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK) //200
 	w.Write(res)
 }
+
+// create book controller function
+func CreateBook(w http.ResponseWriter, r *http.Request) {
+	CreateBook := &models.Book{}
+	utils.ParseBosy(r, CreateBook)
+	b := CreateBook.CreateBook()
+	res, _ := json.Marshal(b)
+	w.WriteHeader(http.StatusOK)
+	w.Write(res)
+}
