@@ -14,7 +14,7 @@ import (
 	//import utils
 
 	//import models
-	"https://github.com/earlspencer66/Learning-Go/tree/main/Go_by_example/go-bookstore/pkg/models"
+	"github.com/earlspencer66/Learning-Go/tree/main/Go_by_example/go-bookstore/pkg/models"
 )
 
 var NewBook models.Book

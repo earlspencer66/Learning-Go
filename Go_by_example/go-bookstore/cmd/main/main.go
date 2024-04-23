@@ -8,7 +8,7 @@ import (
 	"github.com/pkg/routes"
 
 	//need to import the routes from the pkg folder
-	"https://github.com/earlspencer66/Learning-Go/tree/main/Go_by_example/go-bookstore/pkg/routes"
+	"github.com/earlspencer66/Learning-Go/tree/main/Go_by_example/go-bookstore/pkg/routes"
 )
 
 func main() {

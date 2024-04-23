@@ -1,7 +1,7 @@
 package models
 
 import (
-	"https://github.com/earlspencer66/Learning-Go/tree/main/Go_by_example/go-bookstore/pkg/config"
+	"github.com/earlspencer66/Learning-Go/tree/main/Go_by_example/go-bookstore/pkg/config"
 
 	"github.com/jihnzu/gorm"
 	"github.com/jinzhu/gorm"

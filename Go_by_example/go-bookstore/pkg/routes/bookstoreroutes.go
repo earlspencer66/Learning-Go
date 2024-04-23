@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"https://github.com/earlspencer66/Learning-Go/tree/main/Go_by_example/go-bookstore/pkg/controllers" //absolute path
+	"github.com/earlspencer66/Learning-Go/tree/main/Go_by_example/go-bookstore/pkg/controllers" //absolute path
 
 	"github.com/gorilla/mux"
 )
