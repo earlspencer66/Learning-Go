@@ -3,12 +3,13 @@ package main
 import (
 	"net/http"
 
+	"github.com/earlspencer66/Learning-Go/Go_by_example/go-bookstore/pkg/routes"
 	"github.com/gorilla/mux"
 	_ "github.com/jihnzu/gorm/dialects/mysql"
-	"github.com/pkg/routes"
 
 	//need to import the routes from the pkg folder
-	"github.com/earlspencer66/Learning-Go/tree/main/Go_by_example/go-bookstore/pkg/routes"
+	"github.com/earlspencer66/Learning-Go/Go_by_example/go-bookstore/pkg/routes"
+	//"C:/Users/earls/Documents/Learning-Go/Go_by_example/go-bookstore/pkg/routes"
 )
 
 func main() {

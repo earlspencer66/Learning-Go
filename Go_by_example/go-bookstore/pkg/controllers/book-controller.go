@@ -8,13 +8,13 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/pkg/models"
-	"github.com/pkg/utils"
+	"github.com/earlspencer66/Learning-Go/Go_by_example/go-bookstore/pkg/models"
+	"github.com/earlspencer66/Learning-Go/Go_by_example/go-bookstore/pkg/utils"
 
 	//import utils
 
 	//import models
-	"github.com/earlspencer66/Learning-Go/tree/main/Go_by_example/go-bookstore/pkg/models"
+	"github.com/earlspencer66/Learning-Go/Go_by_example/go-bookstore/pkg/models"
 )
 
 var NewBook models.Book
