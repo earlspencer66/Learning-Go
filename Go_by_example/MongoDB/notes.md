@@ -23,5 +23,25 @@ mongosh
 }
 ```
 
-#### MongoDB Compass
+#### MongoDB Compasss
+
+#### Using the MongoDB Shell
+```cmd
+mongosh
+
+test> show.dbs
+test> use local
+local> 
+```
+
+#### Adding New Documents
+```cmd
+bookstore> db.books
+bookstore.books
+bookstore> db.books.insertOne({ json file})
+```
+Create a collection and add documents
+```cmd
+bookstore> db.authors.insertOne({json file})
+```
 
